@@ -11,9 +11,9 @@ case
 when choice == "list"
 	Song.list
 when choice == "new"
-	a.new(param1, param2, param3)
+	Song.add(param1, param2, param3)
 when choice == "update"
 	Song.update(param1.to_i, param2, param3,param4)
 when choice == "remove"
-	a.remove(param1)
+	Song.remove(param1.to_i)
 end
